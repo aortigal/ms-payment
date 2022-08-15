@@ -12,7 +12,6 @@ import reactor.core.publisher.Mono;
 @Service
 public class ActiveImpl implements ActiveService {
 
-    @Qualifier("getWebClientActive")
     @Autowired
     WebClient webClient;
 

@@ -11,7 +11,6 @@ import reactor.core.publisher.Mono;
 @Service
 public class ClientImpl implements ClientService {
 
-    @Qualifier("getWebClientC")
     @Autowired
     WebClient webClient;
 
