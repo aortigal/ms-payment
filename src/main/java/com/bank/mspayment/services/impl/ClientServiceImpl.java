@@ -7,11 +7,11 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 @Service
-public class ClientImpl implements ClientService {
+public class ClientServiceImpl implements ClientService {
 
     private final WebClient webClient;
 
-    public ClientImpl(WebClient.Builder webClientBuilder){
+    public ClientServiceImpl(WebClient.Builder webClientBuilder){
         this.webClient = webClientBuilder.baseUrl("http://localhost:8080").build();
     }
 

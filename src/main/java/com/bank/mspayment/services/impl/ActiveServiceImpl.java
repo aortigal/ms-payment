@@ -8,11 +8,11 @@ import reactor.core.publisher.Mono;
 
 
 @Service
-public class ActiveImpl implements ActiveService {
+public class ActiveServiceImpl implements ActiveService {
 
     private final WebClient webClient;
 
-    public ActiveImpl(WebClient.Builder webClientBuilder){
+    public ActiveServiceImpl(WebClient.Builder webClientBuilder){
         this.webClient = webClientBuilder.baseUrl("http://localhost:8083").build();
     }
 
