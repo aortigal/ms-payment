@@ -148,7 +148,7 @@ public class PaymentServiceImpl implements PaymentService {
         return dao.findAll()
                 .doOnNext(payment -> {
                     if(payment.getClientId().equals(idClient)) {
-                        balance.set(balance.get() + payment.getMont());
+                        balance.set(balance.get() + payment.getAmount());
                         log.info(payment.toString());
                     }
                 })

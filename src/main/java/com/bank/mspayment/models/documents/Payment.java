@@ -19,6 +19,6 @@ public class Payment extends Audit
     private String clientId;
     @NotNull(message = "creditId must not be null")
     private String creditId;
-    @NotNull(message = "mont must not be null")
-    private Float mont;
+    @NotNull(message = "amount must not be null")
+    private Float amount;
 }
